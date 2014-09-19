@@ -1,0 +1,577 @@
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0px;
+}
+.noPad {
+	padding: 0px !important;
+}
+.navbar .nav > li > .dropdown-menu:after {
+	border-bottom: 6px solid #ffffff;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	content: "";
+	display: inline-block;
+	right: 12px;
+	position: absolute;
+	top: -6px;
+}
+.custmLeftHead {
+	color: #fff;
+	font-size: 14px;
+	float: left;
+	width: 100%;
+}
+.custmLeftHead img {
+	float: left;
+}
+.custmLeftHead span {
+	float: left;
+	margin: 10px 0px 10px 30px;
+}
+.custmLeftHeadText {
+	color: #7a7c7e;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 18px 0;
+	float: left;
+	width: 100%;
+}
+.nav.nav-sidebar {
+	float: left;
+	width: 110%;
+	margin-right: 0px;
+}
+.nav-sidebar > li > a {
+	color: #b2b5bc;
+	font-size: 13px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background: #181a1d;
+}
+.customCollBtn {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 0 none;
+	color: #b2b5bc;
+	font-size: 14px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-top: 10px;
+	text-align: left;
+	width: 100%;
+}
+.customCollBtn:hover, .customCollBtn:focus {
+	background: #181a1d;
+}
+.custmNavList {
+	float: left;
+	width: 100%;
+	color: #fff;
+}
+.custmNavLi > li {
+	float: left;
+	width: 105%;
+}
+.custmNavList p {
+	float: left;
+	width: 100%;
+	margin: 0;
+}
+.custmNavLi p a {
+	float: left;
+	width: 100%;
+	color: #999;
+	padding: 5px 0 5px 20%;
+}
+.custmNavLi p a:hover {
+	color: #b2b5bc;
+	background: #3d4044;
+	text-decoration: none;
+}
+.topBarCustNav img {
+	float: left;
+	margin: 0 5px 0 0;
+}
+.nav.navbar-nav.navbar-right {
+	margin: 0 10px 0 0;
+}
+.custTopText {
+	margin: 9px 0 0 25px;
+}
+.pageHeadH1 {
+	margin: 0px;
+}
+.custBoxWhite {
+	width: 100%;
+	float: left;
+	background: #ffffff;
+	padding: 20px;
+	box-shadow: 0 0 2px #CCC;
+	margin: 0 0 20px 0;
+}
+.caretCustHm {
+	left: 40px;
+	position: relative;
+}
+.homeOrgBtn {
+	background: #f0793c;
+	color: #fff;
+	padding: 0 0 0 30px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	line-height: 30px;
+	float: left;
+	font-size: 14px;
+}
+.homeOrgBtn a {
+	color: #fff;
+}
+.homeOrgBtn a:hover {
+	text-decoration: none;
+}
+.homeOrgBtnSpn {
+	text-align: center;
+	background: #dd723b;
+	width: 35px;
+	line-height: 30px;
+	height: 30px;
+	float: right;
+	margin: 0 0 0 30px;
+	border-radius: 0 4px 4px 0;
+	-moz-border-radius: 0 4px 4px 0;
+	-ms-border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 0 4px 4px 0;
+}
+.fontGry18 {
+	color: #949699;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.customHomeTbl {
+	float: left;
+	margin-left: 2%;
+	margin-top: 5px;
+	width: 96%;
+}
+.tableBgBlue {
+	background: #19355a;
+	color: #fff;
+}
+.lineHeight18 {
+	line-height: 28px;
+}
+.tableBgBlueLt {
+	background: #2f5888;
+	color: #fff;
+	border-bottom: 1px solid #19355a;
+	padding: 10px 5px !important;
+}
+.tableBorRt3 {
+	border-right: 3px solid #848484;
+}
+.tableBgGray {
+	background: #e1e3e5;
+	color: #666666;
+}
+.tableBorBtn1 {
+	border-bottom: 1px solid #edf0f0;
+	position: relative;
+}
+.tableInputCust {
+	width: 80px;
+	margin: 0 15px;
+	border-radius: 4px;
+	padding: 3px 8px 3px 0;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #daddde;
+	text-align: right;
+}
+.tableTxtRt {
+	text-align: right;
+	padding: 0 15px 0 0;
+}
+.btn-default2 {
+	background-color: #e6e9e9;
+	border-color: #cccccc;
+	color: #666666;
+}
+.btn2 {
+	padding: 3px 20px 3px 12px;
+}
+.btn2 .caret {
+	left: 12px;
+}
+.custHmBt {
+	padding: 6px 100px 6px 12px;
+	margin: 0 0 0 20px;
+}
+.custHmBt .caret {
+	left: 85px;
+}
+.textRt {
+	text-align: right;
+	padding: 0 20px 0 0;
+	float: right;
+}
+.textRt2 {
+	text-align: right;
+	padding: 0 45% 0 0;
+	float: right;
+}
+.custBoxWhite > .dropdown.open .dropdown-menu {
+	margin: 2px 0 0 20px;
+}
+.navbar-toggle {
+	margin-right: 0px;
+}
+.deskImg {
+	display: block;
+}
+.respoImg {
+	display: none;
+}
+.custmRespoSidebar select {
+	display: none;
+}
+.custSideBarBg {
+	background: #eeeeee;
+	float: right;
+}
+.dropdownCustHome {
+	top: 80%;
+	left: 4px;
+}
+.tableTr {
+	width: 100%;
+	float: left;
+}
+.tableTd {
+	float: left;
+	padding: 6px 5px;
+	height: 40px;
+}
+.tableTd05 {
+	width: 3%;
+}
+.tableTd10 {
+	width: 10%;
+}
+.tableTd15 {
+	width: 15%;
+}
+.tableTd20 {
+	width: 20%;
+}
+.tableTd25 {
+	width: 25%;
+}
+.tableTd30 {
+	width: 30%;
+}
+.tableTd40 {
+	width: 40%;
+}
+.tableTd50 {
+	width: 50%;
+}
+.tableTd60 {
+	width: 60%;
+}
+.tableTd70 {
+	width: 70%;
+}
+.tableTd80 {
+	width: 80%;
+}
+.tableTd90 {
+	width: 90%;
+}
+.tableTd100 {
+	width: 100%;
+}
+.tableTd input[type="checkbox"] {
+	margin: 4px 3px 3px 5px;
+	float: left;
+}
+.logo {
+	width: 100%;
+	text-align: center;
+	margin: 0 0 20px 0;
+	border-bottom: 1px solid #3c3f43;
+}
+.table-responsive {
+	width: 100%;
+	float: left;
+	padding: 0 0 0 1%;
+}
+.pad20 {
+	padding: 20px 20px 10px 20px;
+}
+.borBtm4 {
+	border-bottom: 4px solid #d4d7d7;
+}
+.innerPageCheck {
+	float: left;
+	width: 100%;
+	margin: 20px 0;
+}
+.innerPageCheck > div {
+	width: 14%;
+	margin: 0 0 0 2%;
+	float: left;
+}
+.innerPageCheck > div input[type="checkbox"] {
+	float: left;
+	margin: 4px;
+}
+.innerPageCheck > div span {
+	float: left;
+	font-weight: 600;
+	margin: 0 0 0 5px;
+}
+.breadCust {
+	color: #15a2d7;
+	text-transform: none;
+	margin: 0 0 0 20px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.innerPgColor1 {
+	color: #15a2d7;
+}
+.innerPgColor2 {
+	color: #5f8040;
+}
+.innerPgColor3 {
+	color: #9966cc;
+}
+.innerPgColor4 {
+	color: #4956ba;
+}
+.innerPgColor4 span > span {
+	color: #666666;
+	font-weight: normal;
+}
+.innerPgColor5 {
+	color: #996600;
+}
+.tableInner {
+	float: left;
+	width: 100%;
+}
+.tableInnerLft {
+	width: 35%;
+	float: left;
+}
+.tableInnerLftMain {
+	background: #2f5888;
+	color: #fff;
+	float: left;
+	width: 100%;
+}
+.tableInnerLftMainDrk {
+	background: #254671;
+}
+.tableInnerLftBorTp {
+	border-top: 4px solid #19355a;
+	padding: 4% 4% 4% 4%;
+}
+.tableInnerLft1 {
+	width: 55%;
+	font-size: 13.5px;
+	float: left;
+	padding: 2% 2% 2% 4%;
+}
+.tableInnerLft2 {
+	width: 45%;
+	float: left;
+	font-size: 13.5px;
+	border-right: 3px solid #848484;
+	border-left: 1px solid #19355a;
+	padding: 2% 2% 2% 4%;
+}
+.tableInnerRt {
+	float: left;
+	width: 65%;
+}
+.tableInnerRtMain {
+	float: left;
+	width: 100%;
+	padding: 0 0 20px 0;
+	white-space: nowrap;
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+.tableInnerRtMain ul {
+	float: left;
+	width: 100%;
+	padding: 0 0 0 4px;
+	margin: 0px;
+}
+.ulGray {
+	background: #f7f7f7;
+}
+.tableInnerRtMain ul li {
+	display: inline-block;
+	width: 11.1%;
+	font-size: 13.5px;
+	border-left: 1px solid #ededed;
+	margin: 0 0 0 -4px;
+	padding: 7.7px 8px;
+}
+.tableInnerRtMain ul li.topHeadBlue {
+	border-top: 4px solid #15a2d7;
+	padding: 9px 11px;
+	line-height: 17px;
+}
+.tableInnerRtMain ul li.topHeadBlue > span {
+	color: #15a2d7;
+	font-weight: 600;
+}
+.tableInnerRtMain ul li.topHeadGreen {
+	border-top: 4px solid #83a662;
+	padding: 9px 11px;
+	line-height: 17px;
+}
+.tableInnerRtMain ul li.topHeadGreen > span {
+	color: #83a662;
+	font-weight: 600;
+}
+.tableInnerRtMain ul li.topHeadBrown {
+	border-top: 4px solid #996600;
+	padding: 9px 11px;
+	line-height: 17px;
+}
+.tableInnerRtMain ul li.topHeadBrown > span {
+	color: #996600;
+	font-weight: 600;
+}
+.tableInnerRtMain ul li.topHeadBlue input[type="checkbox"], .tableInnerRtMain ul li.topHeadGreen input[type="checkbox"], .tableInnerRtMain ul li.topHeadBrown input[type="checkbox"] {
+	margin: 5px 0 0 0;
+}
+
+
+/*=======================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================*/
+ @media (min-width:100px) and (max-width:480px) {
+.tableTr {
+	float: left;
+	width: 200%;
+	padding: 0 40px 0 0;
+}
+.table-responsive {
+	overflow: scroll;
+}
+}
+ @media (min-width:100px) and (max-width:800px) {
+#mCSB_2_container {
+	width: 200% !important;
+}
+.tableInnerLft, .tableInnerRt {
+	width: 100%;
+}
+.innerPageCheck > div {
+	float: left;
+	margin: 0 0 0 0;
+	width: 20%;
+}
+.innerPageCheck > div span {
+	clear: left;
+	float: left;
+	font-size: 11px;
+	margin: 0 0 0 1px;
+}
+.logo {
+	width: 100%;
+	text-align: center;
+	margin: 0 0 20px 0;
+	padding: 0 0 12px;
+}
+.navbar.navbar-inverse {
+	background: #2a2d33;
+	margin: 0px;
+}
+.custSideBarBg {
+	background: none;
+}
+.navbar.navbar-inverse.navbar-fixed-top {
+	background: #1a1a1a;
+}
+h1, .h1 {
+	font-size: 32px;
+}
+.fontGry18 {
+	font-size: 12px;
+}
+.custHmBt, .custBoxWhite > .dropdown.open .dropdown-menu {
+	margin: 0px;
+}
+.homeOrgBtn {
+	padding: 0 0 0 10px;
+}
+.homeOrgBtnSpn {
+	margin: 0 0 0 15px;
+}
+.navbar-collapse.collapse.in, .navbar-collapse.collapse {
+	width: 100%;
+}
+.custTopText {
+	display: none;
+}
+.deskImg {
+	display: none;
+}
+.respoImg {
+	display: block;
+}
+.custmRespoSidebar {
+	background: none repeat scroll 0 0 #2a2d33;
+	display: block !important;
+	padding: 13px 20px;
+	width: 100%;
+}
+.custmRespoSidebar select {
+	width: 100%;
+	padding: 5px;
+	display: block !important;
+}
+.custmRespoSidebar .custmLeftHead, .custmRespoSidebar .custmLeftHeadText, .custmRespoSidebar ul {
+	display: none;
+}
+.custSideBarBg {
+	width: 100%;
+}
+.tableInputCust {
+	float: left;
+	margin: 0;
+	padding: 3px 8px 3px 0;
+	width: 100%;
+}
+.tableTd25 {
+	font-size: 11px;
+}
+.tableTd05 {
+	width: 5%;
+}
+.tableTd15 {
+	width: 13%;
+}
+}
+ @media (min-width:800px) {
+.logo {
+	border-bottom: 1px solid #3c3f43;
+	margin: 0 0 20px -20px;
+	padding: 0 0 12px;
+	text-align: center;
+	width: 122%;
+}
+}
+ @media (min-width:1000px) {
+.customTopHeader {
+	padding-left: 0px;
+}
+}

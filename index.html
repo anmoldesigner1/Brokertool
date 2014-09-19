@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>BROKERTool</title> 
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/scroller.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/dashboard.css" rel="stylesheet">
+ 
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="full-page">
+<div class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid customTopHeader">
+    <div class="col-sm-3 col-md-2 customLogoBg">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> 
+      	<span class="sr-only">Toggle navigation</span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+      </button>
+       </div>
+      <div class="col-lg-10 custSideBarBg">
+        <div class="navbar-collapse collapse">
+        	<div class="pull-left custTopText"><h6>CLIENT:  Keller Contstruction</h6></div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="topBarCustNav">
+            	<img src="images/iconAlert.png" alt="ALERTS" class="deskImg" />
+                <img src="images/iconAlertWht.png" alt="ALERTS" class="respoImg" />ALERTS</a>
+             </li>
+            <li><a href="#" class="topBarCustNav">
+                <img src="images/iconSetting.png" alt="SETTINGS" class="deskImg" />
+                <img src="images/iconSettingWht.png" alt="SETTINGS" class="respoImg" />SETTINGS</a></li>
+            <li class="dropdown" id="">
+              <a data-toggle="dropdown" class="dropdown-toggle topBarCustNav" role="button" id="drop3" href="#">
+              <img class="deskImg" src="images/iconUser.png" alt="User" />
+              <img class="respoImg" src="images/iconUserWht.png" alt="User" />Ojas<b class="caret"></b></a>
+              <ul aria-labelledby="drop3" role="menu" class="dropdown-menu">
+                <li><a href="javascript:void(0);" tabindex="-1" role="menuitem">Admin Name</a></li>
+                <li><a href="javascript:void(0);" tabindex="-1" role="menuitem">Edit My Profile</a></li>
+                <li><a href="javascript:void(0);" tabindex="-1" role="menuitem">Logout</a></li>
+              </ul>
+            </li>      
+           </ul>
+        </div>
+       </div> 
+  </div>
+</div> 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar custmRespoSidebar">
+    	<div class="logo"><a href="javascript:void(0);" title="BROKERTool"><img src="images/logo.png" alt="BROKERTool" /></a></div>
+    	<div class="custmLeftHead"><!--<img src="images/iconClients.png" alt="Clients" />--><span>Clients</span></div>	
+        <div class="custmLeftHeadText">CLIENT:</div>
+          <ul class="nav nav-sidebar custmNavLi">
+            <li><a href="javascript:void(0);">Dashboard</a></li>
+            <li><a href="javascript:void(0);">RFP</a></li>
+            <li><a href="javascript:void(0);">Census maintenanace</a></li>
+            <li><a href="javascript:void(0);">Marekting tool</a></li>
+            <li><a href="javascript:void(0);">Quote reader</a></li>
+            <li><button class="customCollBtn" type="button" data-toggle="collapse" data-target="#demo">Quote compare</button>
+            	<div id="demo" class="collapse custmNavList">
+                	<p><a href="javascript:void(0);">Current plans</a></p>
+                    <p><a href="javascript:void(0);">Set criteria</a></p>
+                    <p><a href="javascript:void(0);">Compare level 1</a></p>
+                    <p><a href="javascript:void(0);">Compare Level 2</a></p>
+                </div>
+            </li>
+            <li><a href="javascript:void(0);">Marekting tool</a></li>
+            <li><a href="javascript:void(0);">Marekting tool</a></li>
+            <li><a href="javascript:void(0);">Client presentation creator</a></li>
+          </ul>
+          
+          <select>
+          	<option>Dashboard</option>
+            <option>RFP</option>
+            <option>Census maintenanace</option>
+            <option>Marekting tool</option>
+            <option>Quote reader</option>
+            <option>Quote compare</option>
+            <option><span>Current plans</span></option>
+            <option><span>Set criteria</span></option>
+            <option><span>Compare level 1</span></option>
+            <option><span>Compare Level 2</span></option>
+            <option>Marekting tool</option>
+            <option>Marekting tool</option>
+            <option>Client presentation creator</option>
+           </select>
+
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <h1 class="page-header pageHeadH1">Set plan criteria</h1>
+      <div class="col-md-12 noPad">
+      	<div class="custBoxWhite">
+          <div class="dropdown">
+          <p class="fontGry18">1. Select comparison method</p>
+          <!--Add disabled Class to disable-->
+          <button class="btn btn-default dropdown-toggle custHmBt" type="button" id="dropdownMenu1" data-toggle="dropdown">By range <span class="caret caretCustHm"></span></button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="custBoxWhite">
+      <p class="fontGry18">2. Set Range<span class="pull-right homeOrgBtn"><a href="javascript:void(0);">Set Plan Criteria</a><span class="homeOrgBtnSpn"><img src="images/iconArrow.png" alt="Arrow" /></span></span></p>
+          <div class="table-responsive">
+          	<div class="tableTr">
+            	<div class="tableTd tableBgBlue tableTd05">&nbsp;</div>
+                <div class="tableTd tableBgBlue tableTd25 lineHeight18"><b>CATEGORY</b></div>
+                <div class="tableTd tableBgBlue tableBorRt3 tableTd15 lineHeight18"><b>CURRENT PLAN</b></div>
+                <div class="tableTd tableBgGray tableTd05">&nbsp;</div>
+                <div class="tableTd tableBgGray tableTd15 lineHeight18"><b><span class="textRt2">FROM</span></b></div>
+                <div class="tableTd tableBgGray tableTd15 lineHeight18"><b><span class="textRt2">TO</span></b></div>
+                <div class="tableTd tableBgGray tableTd10">&nbsp;</div>
+                <div class="tableTd tableBgGray tableTd10">&nbsp;</div>
+                <div class="tableTd tableBgGray tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox1" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Individual Deductible</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00"  id="in1a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00"  id="in1b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox2" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Individual Deductible</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in2a" /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00"id="in2b" /></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox3" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Family Deductible</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in3a" /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in3b" /></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox4" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">ndividual OOP Limit</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$4000</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00"  id="in4a"  /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in4b"   /></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox5" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Family OOP Limit</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$400</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00"  id="in5a" /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in5b" /></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox6" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Co-insurance</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="%"  id="in6a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="%" id="in6b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox7" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">PCP</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in7a" /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %"  id="in7b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in7c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in7c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox8" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Specialist  </div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in8a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in8b" /></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in8c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in8c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox9" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Preventive Care</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">100%</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="100%"   id="in9a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="100%" id="in9b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox10" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Physical Therapy</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in10a" /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in10b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in10c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in10c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox11" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Chiropractic Care</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="100%"  id="in11a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="100%"  id="in11b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button"  id="in11c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in11c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox12" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Inpatient Hospital</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %"  id="in12a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %"  id="in12b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in12c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="in12c">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                    </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox13" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Outpatient Factilty</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %"id="in13a" /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in13b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in13c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in13c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox14" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Outpatient Surgery</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in14a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in14b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in14c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="in14c">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                    </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox15" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Impatient Hospital</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in15a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in15b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in15c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in15c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2" type="button" id="in15d" data-toggle="dropdown">Visit<span class="caret caretCustHm"></span></button><ul class="dropdown-menu" role="menu" aria-labelledby="in15d">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">per day</a></li>
+                          </ul></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox16" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Lab/X-Ray</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in16a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in16b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in16c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="in16c">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                    </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox17" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Advanced Radiology</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in17a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in17b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in17c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in17c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox18" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Emergency Room</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in18a" /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in18b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in18c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in18c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox19" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Ambulance</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in19a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %"  id="in19b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in19c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in19c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox20" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Urgent Care</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %"  id="in20a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in20b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in20c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in20c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox21" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Rx Preferred</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %"  id="in21a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in21b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in21c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in21c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox22" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Rx Non-Preferred</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in22a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in22b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in22c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in22c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox23" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Rx Specialty</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %"  id="in23a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$ or %" id="in23b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1"><button class="btn btn-default dropdown-toggle btn-default2 btn2" type="button" id="in23c" data-toggle="dropdown">$<span class="caret caretCustHm"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="in23c">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                  </ul></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox24" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Rx Mail Order</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="#X" id="in24a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="#X" id="in24b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox25" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Rx Individual Deductible</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in25a" /></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in25b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+            <div class="tableTr">
+            	<div class="tableTd tableBgBlueLt tableTd05"><input type="checkbox" id="checkbox26" class="css-checkbox" /></div>
+                <div class="tableTd tableBgBlueLt tableTd25">Rx Family Deductible</div>
+                <div class="tableTd tableBgBlueLt tableBorRt3 tableTd15"><span class="textRt">$20</span></div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in26a"/></div>
+                <div class="tableTd tableTd15 tableBorBtn1"><input class="tableInputCust" type="text" value="" name="" placeholder="$00" id="in26b"/></div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd10 tableBorBtn1">&nbsp;</div>
+                <div class="tableTd tableTd05">&nbsp;</div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/docs.min.js"></script>
+
+<!---Scroller--->
+<script src="jquery.mCustomScrollbar.concat.min.js"></script> 
+<script>
+  (function($){
+	  $(window).load(function(){
+		  
+		  $("body").mCustomScrollbar({
+			  theme:"minimal"
+		  });
+	  });
+  })(jQuery);
+</script>
+<script>
+  (function($){
+	  $(window).load(function(){
+		  $("#content-6").mCustomScrollbar({
+			  axis:"x",
+			  theme:"light-3",
+			  advanced:{autoExpandHorizontalScroll:true}
+		  });
+	  });
+  })(jQuery);
+</script>
+    
+    
+
+<script>
+$(document).ready(function(){
+	
+	var totalCheckbox=$('.css-checkbox').length;	
+	
+	for ( var i = 0; i <= totalCheckbox; i++ ) {
+		$("#in"+i+'a').prop('disabled', true);
+		$("#in"+i+'b').prop('disabled', true);
+		$("#in"+i+'c').prop('disabled', true);
+		$("#in"+i+'d').prop('disabled', true);
+	}
+});
+
+$('.css-checkbox').click(function(){
+	var curreId=this.id;
+	var newId=curreId.slice(8,10);
+	if($('#'+curreId).is(":checked")==true){
+		$("#in"+newId+'a').prop('disabled', false);
+		$("#in"+newId+'b').prop('disabled', false);
+		$("#in"+newId+'c').prop('disabled', false);
+		$("#in"+newId+'d').prop('disabled', false);
+	}else{
+		$("#in"+newId+'a').prop('disabled', true);
+		$("#in"+newId+'b').prop('disabled', true);
+		$("#in"+newId+'c').prop('disabled', true);
+		$("#in"+newId+'d').prop('disabled', true);
+	}
+	
+});
+
+</script>
+
+
+</body>
+</html>
