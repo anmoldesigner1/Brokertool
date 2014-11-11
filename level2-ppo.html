@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>BROKERTool</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/scroller.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="full-page">
+<header>
+  <div class="container-fluid">
+    <div class="col-sm-12">
+      <div class="logo"><a href="javascript:void(0);"><img src="images/logo.png" alt="BROKERTool" /></a></div>
+    </div>
+  </div>
+</header>
+<section class="navigation" >
+  <div class="container-fluid">
+    <nav class="customNav">
+      <ul>
+        <li><a href="javascript:void(0);" title="Overview">Overview</a></li>
+        <li><a href="javascript:void(0);" class="active" title="Set Criteria">Set Criteria</a></li>
+        <li><a href="javascript:void(0);" title="Level 1 Compare">Level 1 Compare</a></li>
+        <li><a href="javascript:void(0);" title="Level 2 Compare">Level 2 Compare</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<section class="middle">
+  <div class="container-fluid">
+    <div class="middTopBtns">
+      <div class="col-sm-12">
+      	<div class="top01">
+        	<h5>Show Carriers</h5>
+            <span class="greenColr"><span>Aetna</span><br/>
+            	<span class="custCheck"><input type="checkbox" class="checkbox" id="row1" checked="checked" /><label>PPO 2C</label><br/>
+                <input type="checkbox" class="checkbox" id="row2" checked="checked"/><label>PPO 2B</label></span>
+            </span>
+            <span class="blueColr"><span>Blue Cross</span><br/>
+            	<span class="custCheck"><input type="checkbox" class="checkbox" id="row3" checked="checked"/><label>PPO C</label><br/>
+                <input type="checkbox" class="checkbox" id="row4" checked="checked"/><label>PPO 2B</label></span>
+            </span>
+            <span class="blueColr"><span>Blue Shield</span><br/>
+            	<span class="custCheck"><input type="checkbox" class="checkbox" id="row5" checked="checked"/><label>PPO 20</label><br/>
+                <input type="checkbox" class="checkbox" id="row6" checked="checked"/><label>PPO 30</label></span>
+            </span>
+            <span><span>Unitied Health<br/> (Declined)</span></span>
+            <span class="dBlueColr"><span>Kaiser</span><br/><span class="custCheck"><input type="checkbox" class="checkbox" id="row7" checked="checked"/></span></span>
+        </div>
+      </div>
+      
+      <div class="col-sm-12">
+        <p class="textShowing">Showing: <span>12 plans</span></p>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      
+      <div class="tableInner table-responsive">
+          	<div class="tableInnerLft">
+            	<div class="tableInnerLftMain">
+                    <div class="tableInnerLft1 noPadTopBtm"><h3>&nbsp;</h3></div>
+                    <div class="tableInnerLft2 noPadTopBtm"><h3><span>Current</span><span>Plan</span></h3></div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">CATEGORY</div>
+                    <div class="tableInnerLft2"><span class="colorLt">&nbsp;</span></div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Monthly cost</div>
+                    <div class="tableInnerLft2">$85,000</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">% change from current </div>
+                    <div class="tableInnerLft2">-</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">% change from renewal</div>
+                    <div class="tableInnerLft2">-</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Individual Deductible</div>
+                    <div class="tableInnerLft2">($500/$1000)</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Family Deductible</div>
+                    <div class="tableInnerLft2">($1000/$2000)</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Individual OOP Limit</div>
+                    <div class="tableInnerLft2">($2000/$4000)</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Family OOP Limit</div>
+                    <div class="tableInnerLft2">($4000/$8000)</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Co-insurance</div>
+                    <div class="tableInnerLft2">80%/60%</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">PCP</div>
+                    <div class="tableInnerLft2">$20</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Specialist</div>
+                    <div class="tableInnerLft2">$30</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Preventive Care</div>
+                    <div class="tableInnerLft2">100%</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Physical Therapy</div>
+                    <div class="tableInnerLft2">$30</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Chiropractic Care</div>
+                    <div class="tableInnerLft2">$30</div>
+				</div>
+                 <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Inpatient Hospital</div>
+                    <div class="tableInnerLft2">$250*</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Outpatient Factilty</div>
+                    <div class="tableInnerLft2">$100*</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Outpatient Surgery</div>
+                    <div class="tableInnerLft2">$100*</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Lab/X-Ray</div>
+                    <div class="tableInnerLft2">$0*</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Advanced Radiology</div>
+                    <div class="tableInnerLft2">$100*</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Emergency Room</div>
+                    <div class="tableInnerLft2">$100*</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Ambulance</div>
+                    <div class="tableInnerLft2">$250*</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Urgent Care</div>
+                    <div class="tableInnerLft2">$50</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Rx Generic</div>
+                    <div class="tableInnerLft2">$10</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Rx Preferred</div>
+                    <div class="tableInnerLft2">$20</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Rx Non-Preferred</div>
+                    <div class="tableInnerLft2">$40</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Rx Specialty</div>
+                    <div class="tableInnerLft2">20%</div>
+				</div>
+                <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Rx Mail Order</div>
+                    <div class="tableInnerLft2">2x</div>
+				</div>
+                 <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Rx Individual Deductible</div>
+                    <div class="tableInnerLft2">$0</div>
+				</div>
+                 <div class="tableInnerLftMain">
+                    <div class="tableInnerLft1">Rx Family Deductible</div>
+                    <div class="tableInnerLft2">$0</div>
+				</div>
+                <div class="tableInnerLftText">* After coinsurance</div>
+            </div>
+            <div class="tableInnerRt">
+            	<div class="tableInnerRtMain content horizontal-images" id="content-6" data-mcs-theme="minimal">
+                	<ul class="topHeadGreen"  id="row1a">
+                        <li class="noPadTopBtm"><h3><img src="images/tableLogo1.png" alt="PPO 2C"/><br/><span>PPO 2C</span><br/><span><input type="checkbox" /></span></h3></li>
+                        <li><span class="colorLt">(IN/OUT)</span></li>
+                        <li>$85,000</li>
+                        <li>-</li>
+                        <li>-</li>
+                        <li class="colorGreen"><span>($400/$800)</span></li>
+                        <li>($1000/$2000)</li>
+                        <li>($1000/$2000)</li>
+                        <li>($4000/$8000)</li>
+                        <li>80%/60%</li>
+                        <li>$20</li>
+                        <li>$30</li>
+                        <li>100%</li>
+                        <li>$30</li>
+                        <li>$30</li>
+                        <li>$250*</li>	
+                        <li>$100*</li>		
+                        <li>$100*</li>			
+                        <li>$0*</li>			
+                        <li>$100*</li>			
+                        <li>$100*</li>		
+                        <li>$250*</li>		
+                        <li>$50</li>			
+                        <li>$10</li>		
+                        <li>$20</li>		
+                        <li>$40</li>		
+                        <li>20%</li>		
+                        <li>3x</li>		
+                        <li>$0</li>              
+                        <li>$0</li>
+                     </ul>
+                     
+                     <ul class="topHeadGreen"   id="row2a">
+                        <li class="noPadTopBtm"><h3><img src="images/tableLogo1.png" alt="PPO 2B"/><br/><span>PPO 2B</span><br/><span><input type="checkbox" /></span></h3></li>
+                        <li><span class="colorLt">(IN/OUT)</span></li>
+                        <li>$85,000</li>
+                        <li>-</li>
+                        <li>-</li>
+                        <li class="colorRed"><span>($600/$1000)</span></li>
+                        <li class="colorRed"><span>($1200/$2000)</span></li>
+                        <li>($2000/$4000)</li>
+                        <li>($4000/$8000)</li>
+                        <li>80%/60%</li>
+                        <li>$20</li>
+                        <li>$30</li>
+                        <li>100%</li>
+                        <li>$30</li>
+                        <li>$30</li>
+                        <li>$250*</li>	
+                        <li>$100*</li>		
+                        <li>$100*</li>			
+                        <li>$0*</li>			
+                        <li>$100*</li>			
+                        <li>$100*</li>		
+                        <li>$250*</li>		
+                        <li>$50</li>			
+                        <li>$10</li>		
+                        <li>$20</li>		
+                        <li>$40</li>		
+                        <li>20%</li>		
+                        <li>3x</li>		
+                        <li>$0</li>              
+                        <li>$0</li>
+                     </ul>
+                     
+                     
+                     
+                     <ul class="topHeadBlue"   id="row3a">
+                        <li class="noPadTopBtm"><h3><img src="images/tableLogo2.png" alt="PPO C"/><br/><span>PPO C</span><br/><span><input type="checkbox" /></span></h3></li>
+                        <li><span class="colorLt">(IN/OUT)</span></li>
+                        <li>$85,000</li>
+                        <li>-</li>
+                        <li>-</li>
+                        <li class="colorGreen"><span>($400/$800)</span></li>
+                        <li>($1000/$2000)</li>
+                        <li>($1000/$2000)</li>
+                        <li>($4000/$8000)</li>
+                        <li>80%/60%</li>
+                        <li>$20</li>
+                        <li>$30</li>
+                        <li>100%</li>
+                        <li>$30</li>
+                        <li>$30</li>
+                        <li>$250*</li>	
+                        <li>$100*</li>		
+                        <li>$100*</li>			
+                        <li>$0*</li>			
+                        <li>$100*</li>			
+                        <li>$100*</li>		
+                        <li>$250*</li>		
+                        <li>$50</li>			
+                        <li>$10</li>		
+                        <li>$20</li>		
+                        <li>$40</li>		
+                        <li>20%</li>		
+                        <li>3x</li>		
+                        <li>$0</li>              
+                        <li>$0</li>
+                     </ul>
+                     
+                     <ul class="topHeadBlue"   id="row4a">
+                        <li class="noPadTopBtm"><h3><img src="images/tableLogo2.png" alt="PPO 2B"/><br/><span>PPO 2B</span><br/><span><input type="checkbox" /></span></h3></li>
+                        <li><span class="colorLt">(IN/OUT)</span></li>
+                        <li>$85,000</li>
+                        <li>-</li>
+                        <li>-</li>
+                        <li class="colorGreen"><span>($400/$800)</span></li>
+                        <li>($1000/$2000)</li>
+                        <li>($1000/$2000)</li>
+                        <li>($4000/$8000)</li>
+                        <li>80%/60%</li>
+                        <li>$20</li>
+                        <li>$30</li>
+                        <li>100%</li>
+                        <li>$30</li>
+                        <li>$30</li>
+                        <li>$250*</li>	
+                        <li>$100*</li>		
+                        <li>$100*</li>			
+                        <li>$0*</li>			
+                        <li>$100*</li>			
+                        <li>$100*</li>		
+                        <li>$250*</li>		
+                        <li>$50</li>			
+                        <li>$10</li>		
+                        <li>$20</li>		
+                        <li>$40</li>		
+                        <li>20%</li>		
+                        <li>3x</li>		
+                        <li>$0</li>              
+                        <li>$0</li>
+                     </ul>
+                     
+                     
+                     <ul class="topHeadDrkBlueShld"   id="row5a">
+                        <li class="noPadTopBtm"><h3><span>PPO 20</span><br/><span><input type="checkbox" /></span></h3></li>
+                        <li><span class="colorLt">(IN/OUT)</span></li>
+                        <li>$85,000</li>
+                        <li>-</li>
+                        <li>-</li>
+                        <li class="colorGreen"><span>($400/$800)</span></li>
+                        <li>($1000/$2000)</li>
+                        <li>($1000/$2000)</li>
+                        <li>($4000/$8000)</li>
+                        <li>80%/60%</li>
+                        <li>$20</li>
+                        <li>$30</li>
+                        <li>100%</li>
+                        <li>$30</li>
+                        <li>$30</li>
+                        <li>$250*</li>	
+                        <li>$100*</li>		
+                        <li>$100*</li>			
+                        <li>$0*</li>			
+                        <li>$100*</li>			
+                        <li>$100*</li>		
+                        <li>$250*</li>		
+                        <li>$50</li>			
+                        <li>$10</li>		
+                        <li>$20</li>		
+                        <li>$40</li>		
+                        <li>20%</li>		
+                        <li>3x</li>		
+                        <li>$0</li>              
+                        <li>$0</li>
+                     </ul>
+                     
+                     <ul class="topHeadDrkBlueShld"   id="row6a">
+                        <li class="noPadTopBtm"><h3><span>PPO 30</span><br/><span><input type="checkbox" /></span></h3></li>
+                        <li><span class="colorLt">(IN/OUT)</span></li>
+                        <li>$85,000</li>
+                        <li>-</li>
+                        <li>-</li>
+                        <li class="colorGreen"><span>($400/$800)</span></li>
+                        <li>($1000/$2000)</li>
+                        <li>($1000/$2000)</li>
+                        <li>($4000/$8000)</li>
+                        <li>80%/60%</li>
+                        <li>$20</li>
+                        <li>$30</li>
+                        <li>100%</li>
+                        <li>$30</li>
+                        <li>$30</li>
+                        <li>$250*</li>	
+                        <li>$100*</li>		
+                        <li>$100*</li>			
+                        <li>$0*</li>			
+                        <li>$100*</li>			
+                        <li>$100*</li>		
+                        <li>$250*</li>		
+                        <li>$50</li>			
+                        <li>$10</li>		
+                        <li>$20</li>		
+                        <li>$40</li>		
+                        <li>20%</li>		
+                        <li>3x</li>		
+                        <li>$0</li>              
+                        <li>$0</li>
+                     </ul>
+                     
+                     <ul class="topHeadDrkBlue"   id="row7a">
+                        <li class="noPadTopBtm"><h3><img src="images/tableLogo3.png" alt="Kaiser"/><br/><span>Kaiser</span><br/><span><input type="checkbox" /></span></h3></li>
+                        <li><span class="colorLt">(IN/OUT)</span></li>
+                        <li>$85,000</li>
+                        <li>-</li>
+                        <li>-</li>
+                        <li class="colorGreen"><span>($400/$800)</span></li>
+                        <li>($1000/$2000)</li>
+                        <li>($1000/$2000)</li>
+                        <li>($4000/$8000)</li>
+                        <li>80%/60%</li>
+                        <li>$20</li>
+                        <li>$30</li>
+                        <li>100%</li>
+                        <li>$30</li>
+                        <li>$30</li>
+                        <li>$250*</li>	
+                        <li>$100*</li>		
+                        <li>$100*</li>			
+                        <li>$0*</li>			
+                        <li>$100*</li>			
+                        <li>$100*</li>		
+                        <li>$250*</li>		
+                        <li>$50</li>			
+                        <li>$10</li>		
+                        <li>$20</li>		
+                        <li>$40</li>		
+                        <li>20%</li>		
+                        <li>3x</li>		
+                        <li>$0</li>              
+                        <li>$0</li>
+                     </ul>
+                </div>
+            </div>
+          </div>
+          
+    </div>
+    <div class="middTopBtns">
+      <div class="col-sm-4 pull-right"> <span class="pull-right homeBlueBtn"><a href="javascript:void(0);">Continue to level 2</a><span class="homeBlueBtnSpn"><img alt="Arrow" src="images/iconArrow.png"></span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/docs.min.js"></script> 
+
+<!---Scroller---> 
+<script src="jquery.mCustomScrollbar.concat.min.js"></script> 
+<script>
+  (function($){
+	  $(window).load(function(){
+		  
+		  $("body").mCustomScrollbar({
+			  theme:"minimal"
+		  });
+	  });
+  })(jQuery);
+</script> 
+<script>
+  (function($){
+	  $(window).load(function(){
+		  	  $('.tableInnerRtMain ul').show();
+
+		  $("#content-6").mCustomScrollbar({
+			  
+			  axis:"x",
+			  theme:"light-3",
+			  advanced:{autoExpandHorizontalScroll:true}
+		  });
+	  });
+  })(jQuery);
+</script> 
+    
+ <script>
+ 
+ $('.checkbox').click(function(){
+	var curreId=this.id;
+	if($('#'+curreId).is(":checked")==true){
+		$("#"+curreId+'a').show();
+		$("#"+curreId+'b').show();
+		$("#"+curreId+'c').show();
+	}else{
+		$("#"+curreId+'a').hide();
+		$("#"+curreId+'b').hide();
+		$("#"+curreId+'c').hide();
+	}
+	
+});
+ </script> 
+
+</body>
+</html>

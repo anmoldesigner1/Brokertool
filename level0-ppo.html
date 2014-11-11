@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>BROKERTool</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/scroller.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="full-page">
+<header>
+  <div class="container-fluid">
+    <div class="col-sm-12">
+      <div class="logo"><a href="javascript:void(0);"><img src="images/logo.png" alt="BROKERTool" /></a></div>
+    </div>
+  </div>
+</header>
+<section class="navigation" >
+  <div class="container-fluid">
+    <nav class="customNav">
+      <ul>
+        <li><a href="javascript:void(0);" title="Overview">Overview</a></li>
+        <li><a href="javascript:void(0);" class="active" title="Set Criteria">Set Criteria</a></li>
+        <li><a href="javascript:void(0);" title="Level 1 Compare">Level 1 Compare</a></li>
+        <li><a href="javascript:void(0);" title="Level 2 Compare">Level 2 Compare</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<section class="middle">
+  <div class="container-fluid">
+    <div class="middTopBtns">
+      <div class="col-sm-4 pull-left">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">By Range<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 pull-right"> <span class="pull-right homeBlueBtn"><a href="javascript:void(0);">Continue to level 1</a><span class="homeBlueBtnSpn"><img alt="Arrow" src="images/iconArrow.png"></span></span> </div>
+      <div class="col-sm-12">
+        <p class="textShowing">Showing: <span>PPO Criteria</span></p>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="table-responsive">
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"></div>
+          <div class="tableMainRowBox2"></div>
+          <div class="tableMainRowBox3"></div>
+          <div class="tableMainRowBox4"><span>-  IN Network  -</span></div>
+          <div class="tableMainRowBox5"></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><span>-  OUT OF Network  -</span></div>
+          <div class="tableMainRowBox8"></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1">
+            <input class="custTableCheck" type="checkbox" id="checkall" />
+          </div>
+          <div class="tableMainRowBox2"><h6>CATEGORY</h6></div>
+          <div class="tableMainRowBox3"><h6>Current plan</h6></div>
+          <div class="tableMainRowBox4"><h6>FROM</h6></div>
+          <div class="tableMainRowBox5"><h6>TO</h6></div>
+          <div class="tableMainRowBox6"><h6>&nbsp;</h6></div>
+          <div class="tableMainRowBox7"><h6>FROM</h6></div>
+          <div class="tableMainRowBox8"><h6>TO</h6></div>
+          <div class="tableMainRowBox9"><h6>&nbsp;</h6></div>
+          <div class="tableMainRowBox10"><h6>&nbsp;</h6></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox"  id="checkbox1" /></div>
+          <div class="tableMainRowBox2">Individual Deductible</div>
+          <div class="tableMainRowBox3">($500/$1000)</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in1a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in1b"/></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in1c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in1d"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox2"/></div>
+          <div class="tableMainRowBox2">Family Deductible </div>
+          <div class="tableMainRowBox3">($1000/$2000)</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in2a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in2b"/></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in2c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in2d"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox3"/></div>
+          <div class="tableMainRowBox2">Individual OOP Limit</div>
+          <div class="tableMainRowBox3">($2000/$4000)</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$"  id="in3a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in3b"/></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in3c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in3d"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox4"/></div>
+          <div class="tableMainRowBox2">Family OOP Limit </div>
+          <div class="tableMainRowBox3">($4000/$8000)</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in4a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in4b"/></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in4c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in4d"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox5"/></div>
+          <div class="tableMainRowBox2">Co-insurance</div>
+          <div class="tableMainRowBox3">80%60%</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in5a" /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in5b"/></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in5c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in5c"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox6"/></div>
+          <div class="tableMainRowBox2">PCP</div>
+          <div class="tableMainRowBox3">$20</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in6a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in6b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="in6c">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in6c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in6d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in6e" /></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="in6f">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in6f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox7"/></div>
+          <div class="tableMainRowBox2">Specialist</div>
+          <div class="tableMainRowBox3">$30</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in7a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in7b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="in7c">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in7c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in7d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in7e"/></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button"  data-toggle="dropdown" id="in7f">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in7f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox8"/></div>
+          <div class="tableMainRowBox2">Preventive Care</div>
+          <div class="tableMainRowBox3">100%</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="100%" id="in8a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="100%" id="in8b"/></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="100%" id="in8c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="100%" id="in8d"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox9"/></div>
+          <div class="tableMainRowBox2">Physical Therapy</div>
+          <div class="tableMainRowBox3">$30</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in9a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in9b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="in9c">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in9c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in9d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" /id="in9e"></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="in9f">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in9f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox10"/></div>
+          <div class="tableMainRowBox2">Chiropractic Care</div>
+          <div class="tableMainRowBox3">$30</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in10a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in10b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="in10c">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in10c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in10d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in10e"/></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="in10f">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in10f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox11"/></div>
+          <div class="tableMainRowBox2">Inpatient Hospital</div>
+          <div class="tableMainRowBox3">$250*</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in11a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in11b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button"  id="in11c" data-toggle="dropdown">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in11c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in11d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in11e"/></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in11f" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in11f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox12"/></div>
+          <div class="tableMainRowBox2">Outpatient Factilty</div>
+          <div class="tableMainRowBox3">$100*</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in12a" /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in12b" /></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in12c" data-toggle="dropdown">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in12c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in12d" /></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in12e" /></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in12f" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in12f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox13"/></div>
+          <div class="tableMainRowBox2">Outpatient Surgery</div>
+          <div class="tableMainRowBox3">%100*</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in13a"  /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in13b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in13c" data-toggle="dropdown">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in13c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in13d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in13e"/></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in13f" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in13f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox14"/></div>
+          <div class="tableMainRowBox2">Lab/X-Ray</div>
+          <div class="tableMainRowBox3">$0*</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in14a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in14b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in14c" data-toggle="dropdown">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in14c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in14d" /></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in14e" /></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in14f" data-toggle="dropdown">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in14f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox15"/></div>
+          <div class="tableMainRowBox2">Advanced Radiology</div>
+          <div class="tableMainRowBox3">$100*</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in15a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in15b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in15c" data-toggle="dropdown">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in15c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in15d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in15e"/></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in15f" data-toggle="dropdown">$<span class="caret"></span> </button><span class="required">*</span>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in15f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox16"/></div>
+          <div class="tableMainRowBox2">Emergency Room</div>
+          <div class="tableMainRowBox3">$100*</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in16a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in16b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button"  id="in16c" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in16c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in16d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in16e"/></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button"id="in16f" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in16f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox17"/></div>
+          <div class="tableMainRowBox2">Ambulance</div>
+          <div class="tableMainRowBox3">$250*</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in17a" /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in17b" /></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button"  id="in17c" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in17c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in17d"  /></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in17e" /></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button"  id="in17f"  data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in17f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox18"/></div>
+          <div class="tableMainRowBox2">Urgent Care</div>
+          <div class="tableMainRowBox3">$50</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in18a" /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in18b" /></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in18c"  data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in18c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in18d" /></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in18e" /></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in18f" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in18f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox19"/></div>
+          <div class="tableMainRowBox2">Rx Generic</div>
+          <div class="tableMainRowBox3">$10</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in19a" /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in19b" /></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button"   id="in19c" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in19c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in19d" /></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in19e" /></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in19f"  data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in19f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox20"/></div>
+          <div class="tableMainRowBox2">Rx Preferred</div>
+          <div class="tableMainRowBox3">$20</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"  id="in20a" /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"   id="in20b" /></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button"  id="in20c" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in20c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"   id="in20d" /></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"   id="in20e" /></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button"   id="in20f" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in20f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox21"/></div>
+          <div class="tableMainRowBox2">Rx Non-Preferred</div>
+          <div class="tableMainRowBox3">$40</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"   id="in21a" /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"   id="in21b" /></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button"  id="in21c" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in21c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"   id="in21d" /></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"   id="in21e" /></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button"  id="in21f" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in21f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox22"/></div>
+          <div class="tableMainRowBox2">Rx Specialty</div>
+          <div class="tableMainRowBox3">20%</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %"   id="in22a" /></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in22b"/></div>
+          <div class="tableMainRowBox6"><button class="btn btn2 btn-default dropdown-toggle" type="button" id="in22c" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in22c">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in22d"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$ or %" id="in22e"/></div>
+          <div class="tableMainRowBox9"><button class="btn btn2 btn-default dropdown-toggle" type="button"  id="in22f" data-toggle="dropdown">$<span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="in22f">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+          </ul></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox23"/></div>
+          <div class="tableMainRowBox2">Rx Mail Order</div>
+          <div class="tableMainRowBox3">2X</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="2x,2.5x,3x" id="in23a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="2x,2.5x,3x" id="in23b" /></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="2x,2.5x,3x" id="in23c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="2x,2.5x,3x" id="in23d"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox24"/></div>
+          <div class="tableMainRowBox2">Rx Indiv Deductible</div>
+          <div class="tableMainRowBox3">$0</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in24a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in24b"/></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in24c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in24d"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        <div class="tableMainRow">
+          <div class="tableMainRowBox1"><input class="custTableCheck" type="checkbox" id="checkbox25"/></div>
+          <div class="tableMainRowBox2">Rx Family Deductible</div>
+          <div class="tableMainRowBox3">$0</div>
+          <div class="tableMainRowBox4"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in25a"/></div>
+          <div class="tableMainRowBox5"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in25b"/></div>
+          <div class="tableMainRowBox6"></div>
+          <div class="tableMainRowBox7"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in25c"/></div>
+          <div class="tableMainRowBox8"><input class="custTableInput" type="text" value="" name="" placeholder="$" id="in25d"/></div>
+          <div class="tableMainRowBox9"></div>
+          <div class="tableMainRowBox10"></div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="middTopBtns">
+      <div class="col-sm-4 pull-right"> <span class="pull-right homeBlueBtn"><a href="javascript:void(0);">Continue to level 1</a><span class="homeBlueBtnSpn"><img alt="Arrow" src="images/iconArrow.png"></span></span> </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/docs.min.js"></script> 
+
+<!---Scroller---> 
+<script src="jquery.mCustomScrollbar.concat.min.js"></script> 
+<script>
+  (function($){
+	  $(window).load(function(){
+		  
+		  $("body").mCustomScrollbar({
+			  theme:"minimal"
+		  });
+	  });
+  })(jQuery);
+</script> 
+<script>
+  (function($){
+	  $(window).load(function(){
+		  $("#content-6").mCustomScrollbar({
+			  axis:"x",
+			  theme:"light-3",
+			  advanced:{autoExpandHorizontalScroll:true}
+		  });
+	  });
+  })(jQuery);
+</script> 
+<script>
+$(document).ready(function(){
+	
+	var totalCheckbox=$('.custTableCheck').length;	
+	
+	for ( var i = 0; i <= totalCheckbox; i++ ) {
+		$("#in"+i+'a').prop('disabled', true);
+		$("#in"+i+'b').prop('disabled', true);
+		$("#in"+i+'c').prop('disabled', true);
+		$("#in"+i+'d').prop('disabled', true);
+		$("#in"+i+'e').prop('disabled', true);
+		$("#in"+i+'f').prop('disabled', true);
+	}
+});
+
+$('.custTableCheck').click(function(){
+	var curreId=this.id;
+	var newId=curreId.slice(8,10);
+	if($('#'+curreId).is(":checked")==true){
+		$('#'+curreId).parent().parent().addClass('bgBlue');
+		$("#in"+newId+'a').prop('disabled', false);
+		$("#in"+newId+'b').prop('disabled', false);
+		$("#in"+newId+'c').prop('disabled', false);
+		$("#in"+newId+'d').prop('disabled', false);
+		$("#in"+newId+'e').prop('disabled', false);
+		$("#in"+newId+'f').prop('disabled', false);
+	}else{
+		$('#'+curreId).parent().parent().removeClass('bgBlue');
+		$("#in"+newId+'a').prop('disabled', true);
+		$("#in"+newId+'b').prop('disabled', true);
+		$("#in"+newId+'c').prop('disabled', true);
+		$("#in"+newId+'d').prop('disabled', true);
+		$("#in"+newId+'e').prop('disabled', true);
+		$("#in"+newId+'f').prop('disabled', true);
+	}
+	
+});
+
+
+$('#checkall').click(function(){
+	if($('#checkall').is(":checked")==true){
+		$(".custTableInput").prop('disabled', false);
+		$('.custTableCheck').attr('checked','checked');
+
+	}else{
+		$(".custTableInput").prop('disabled', true);
+		$('.custTableCheck').removeAttr('checked');
+	}
+	
+});
+
+</script>
+</body>
+</html>
